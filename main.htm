@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <style type="text/css">
+
+     </style>
+     <script type="text/javascript"></script>
+  </head>
+  <body>
+	<ul id='test'>
+
+		<li>
+			<h2>dfasdfas</h1>
+			<div style='display:none'>我是小黑</div>
+		</li>
+	<li>
+			<h2>dfasdfas</h1>
+			<div style='display:none'> 我是小黑</div>
+
+		</li><li>
+			<h2>dfasdfas</h1>
+			<div style='display:none'>我是小黑</div>
+		</li><li>
+			<h2>dfasdfas</h1>
+			<div style='display:none'>我是小黑</div>
+		</li><li>
+
+			<h2>dfasdfas</h1>
+			<div style='display:none'>我是小黑</div>
+		</li><li>
+			<h2>dfasdfas</h1>
+			<div style='display:none'>我是小黑</div>
+		</li>
+	
+	</ul>
+
+
+  </body>
+</html>
+<script type="text/javascript">
+	var myList=document.getElementById("test");
+	var tit=myList.getElementsByTagName("li");
+	
+	for(var i=0;i<tit.length;i++){
+		var _h=tit[i].getElementsByTagName("h2")[0];
+		
+		_h.onclick=function(){
+			var _div=this.parentNode.getElementsByTagName("div")[0];
+			_div.style.display=_div.style.display=="none"?"block":"none";
+		}
+	}
+</script>
+

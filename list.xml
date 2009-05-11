@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	>
+
+<channel>
+	<title>XRSSReader</title>
+	<link>http://zhwen.org</link>
+	<description>XRSSReader</description>
+	<item>
+		<title>kongove</title>
+		<link>http://www.kongove.cn/blog/?feed=rss2</link>
+	</item>
+	<item>
+		<title>七度黑光</title>
+		<link>http://zhwen.org/xlog/?feed=rss2</link>
+	</item>
+	<item>
+		<title>coop</title>
+		<link>http://cocobear.info/blog/feed/</link>
+	</item>
+	<item>
+		<title>rhlei.org</title>
+		<link>http://blog.sina.com.cn/rss/elina.xml</link>
+	</item>
+	<item>
+		<title>上善若水</title>
+		<link>http://blog.sina.com.cn/rss/sally90.xml</link>
+	</item>
+	<item>
+		<title>罗宾后代的藏宝地</title>
+		<link>http://rss.ycool.com/blog/sadiealupin.xml</link>
+	</item>
+</channel>
+</rss>
+
