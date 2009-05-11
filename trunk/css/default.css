@@ -1,0 +1,14 @@
+﻿body {background: #fff;}
+
+a {color: #292929;text-decoration: none;font-size: .8em;outline: none;}
+
+a:hover {text-decoration: underline;}
+
+a.selected {font-weight: bold;}
+
+#wrap {width: 800px;}
+
+ul {margin: 0; padding: 0 0 0 .5em;}
+
+#tt{cursor: pornter;}
+#main_list{width: 600px;}
