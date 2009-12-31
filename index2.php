@@ -121,6 +121,11 @@
     </span><span class="label">-</span>
   </div>
 </div>
+<script type="text/javascript">
+	$(function() {
+		$("#list_rss").accordion();
+	});
+</script>
 
 <div id="contentSourseReview" class="fixed clear hidden">
   <a style="z-index: 10;" href="#" class="sprite close-review">x</a>
@@ -133,9 +138,8 @@
 	</div>
 </div>
 <ul style="height: 666px;" id="contentView" class="scrolled source-hided">
-
-<li id="current-read" class="cast readed expanded">
-<div class="cast-wrapper">
+<!-- xxxxxxxxxxxxxxxxx -->
+<div id="list_rss">
 <div class="cast-clip">
 	<div class="cast-clip-icon">
 		<span class="sprite fav-star" title="加入/取消收藏(s)"></span>
@@ -149,7 +153,8 @@
 		</div>
 	</div>
 </div>
-
+<div id="current-read" class="cast readed expanded">
+<div class="cast-wrapper">
 <div class="cast-container">
 	<div class="cast-title">
 		<h2><a target="_blank" title="到原网页查看全文" href="#">幸福生活 <img src="img/icon-go.gif" alt=""></a></h2>
@@ -163,24 +168,59 @@
 </div>
 <div class="cast-function-bar">加入收藏其他</div>
 </div>
-</li>
-
-<li id="entry-4" class="cast readed">
-<div class="cast-wrapper">
+</div>
+<!-- xxxxxxxxxxxxxxxxx -->
 <div class="cast-clip">
 	<div class="cast-clip-icon">
-	 <span class="sprite fav-star" title="加入/取消收藏(s)"></span>
+		<span class="sprite fav-star" title="加入/取消收藏(s)"></span>
 	</div>
 	<div class="cast-clip-main">
 		<div class="cast-clip-container">
-		<span class="cast-clip-date">2009年12月06日 (3周前)</span><span title="A Bit? No!!!" class="cast-clip-author">helight</span><h2 title="无题">无题</h2><span class="cast-clip-content">内容描述...</span>
+			<span class="cast-clip-date">2009年12月12日 (2周前)</span>
+			<span title="title" class="cast-clip-author">title</span>
+			<h2 title="我要的幸福生活">幸福生活2</h2>
+			<span class="cast-clip-content">描述2</span>
 		</div>
 	</div>
 </div>
+<div id="current-read" class="cast readed expanded">
+<div class="cast-wrapper">
+<div class="cast-container">
+	<div class="cast-title">
+		<h2><a target="_blank" title="到原网页查看全文" href="#">幸福生活2 <img src="img/icon-go.gif" alt=""></a></h2>
+		<div class="stat">
+		<span class="author"> 作者：helight</span>
+		<span class="date"> 发表时间：2009年12月12日 (2周前)</span>
+		</div>
+	</div>
+
+	<div class="cast-content">文章内容222</div>
 </div>
-</li>
+<div class="cast-function-bar">加入收藏其他22</div>
+</div>
+</div>
+<!-- xxxxxxxxxxxxxxxxx -->
+</div>
+<div class="fixed" id="contentFunctionBar">
 
+  <div class="fl">
+    <div id="contentListType">
+      <span class="label">显示：</span>
+      <span class="selection current foolinkL" style="margin-right: 0pt;">
+      <span class="foolinkR">显示全部</span>
+      </span>
+    </div>
+    <span><a href="#">分享此订阅</a></span>
+  </div>
 
+  <div id="contetDisplayType" class="fr">
+    <span class="selection foolinkL current" style="margin-right: 0pt;">
+      <span class="foolinkR">标题模式</span>
+    </span><span class="label">-</span>
+  </div>
+<!-- xxxxxxxxxxxxxxxxx -->
+</div>
+</ul>
 	<div class="fixed" id="contentPageBar">
 	notes
 	</div>
@@ -193,19 +233,4 @@
     <div id="hotArticles" class="_full_page_ hidden"></div>
     <div id="welcomePage" class="_full_page_ hidden" style="margin-top: 65px;"></div>
    
-   <script type="text/javascript">
-        $(document).ready(function(){
-            LoadIndicator.start();
-            UserModel.keyfrom =  'urs.channel.start' ;
-            UserModel.burl =  null ;
-            UserModel.bookFolderName =  null ;
-            UserModel.bookChannelIDs =  null ;
-            UserModel.skin = 'default';
-            UserModel.initPage =  null ;
-            UserModel.transferState = 0;
-            UserModel.trial = false;
-            UserModel.isSkinTipShowed = true;
-            PageMgr.onDomReady();
-        });
-    </script>
 </body></html>
