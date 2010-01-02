@@ -34,7 +34,7 @@ ddaccordion.init({
 	headerclass: "expandable", 
 	contentclass: "categoryitems", 
 	revealtype: "click", 
-	mouseoverdelay: 200, 
+	mouseoverdelay: 100, 
 	collapseprev: true, 
 	defaultexpanded: [0],
 	onemustopen: false, 
@@ -53,7 +53,7 @@ ddaccordion.init({
 </script>
 <style type="text/css">
 .arrowlistmenu{
-width: 280px; /*width of accordion menu*/
+width: 240px; /*width of accordion menu*/
 }
 
 .arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
@@ -135,49 +135,6 @@ background-color: #F3F3F3;
 function show_list($rss)
 {
 ?>
-	<div id="feedFolderHeader" class="fixed accordion-header expanded">
-		<span style="cursor: default;" class="sprite">-</span>
-		<a style="cursor: default;" href="#" title="04级及以往">
-		<strong style="cursor: default;">
-		<span style="cursor: default;" id="subSpan">06级及以往</span></strong></a>
-	</div>
-<?php
-	if ($rs = $rss->get("./xy_members.xml")) {
-	echo "<div class='scrolled accordion-body'>";
-	echo "<ul class='subscribes'>";
-	foreach ($rs['items'] as $item) {
-		echo "<li><a class='all-readed' title='".$item[title]."' href='?feed_url=".$item[link]."'>";
-		echo "<strong><span class='title'>".$item[title]."";
-		echo "</span></strong></a></li>";
-	}
-	if ($rs['items_count'] <= 0) {
-		echo "<li>Sorry, no items found in the RSS file :-(</li>"; 
-	}
-	echo "</ul></div>\n";
-	} else {
-		echo "Sorry: It's not possible to reach RSS file $url\n<br />";
-	}
-?>
-	<div id="feedFolderHeader" class="fixed accordion-header expanded">
-		<span style="cursor: default;" class="sprite">-</span>
-		<a style="cursor: default;" href="#" title="05级成员">
-		<strong style="cursor: default;">
-		<span style="cursor: default;" id="subSpan">05级成员</span></strong></a>
-	</div>
-	<div style="height: 560px;" id="subTree" class="scrolled accordion-body">
-	  <ul class="subscribes">
-		<li>
-		<a class="all-readed" title="A Geek's Page" href="#" >
-		<strong><span class="title">dddddd</span></strong></a>
-		</li>
-	  </ul>
-	</div>
-<?php
-}
-
-function show_list2($rss)
-{
-?>
 <div class="arrowlistmenu">
 
 <h3 class="menuheader expandable">06级成员</h3>
@@ -200,6 +157,20 @@ function show_list2($rss)
 </ul>
 <h3 class="menuheader expandable">05级成员</h3>
 <ul class="categoryitems">
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
+<li><a href="#">测试标签</a></li>
 <li><a href="#">测试标签</a></li>
 <li><a href="#">测试标签</a></li>
 <li><a href="#">测试标签</a></li>

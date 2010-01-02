@@ -41,7 +41,7 @@ function ShowOneRSS($url) {
 	});
 </script>
 
-<ul style="height: 666px;" id="contentView" class="scrolled source-hided">
+<ul style="height: 580px;" id="contentView" class="scrolled source-hided">
 <!-- xxxxxxxxxxxxxxxxx -->
 <div id="list_rss">
 <?php
@@ -123,7 +123,7 @@ function ShowOneRSS($url) {
 <!-- xxxxxxxxxxxxxxxxx -->
 <div id="list_rss">
 <!-- xxxxxxxxxxxxxxxxx -->
-<div class="cast-clip">
+<div class="menuheader expandable">
 	<div class="cast-clip-icon">
 		<span class="sprite fav-star" title="加入/取消收藏(s)"></span>
 	</div>
@@ -136,6 +136,7 @@ function ShowOneRSS($url) {
 		</div>
 	</div>
 </div>
+<ul class="categoryitems">
 <div id="current-read" class="cast readed expanded">
 <div class="cast-wrapper">
 <div class="cast-container">
@@ -152,6 +153,7 @@ function ShowOneRSS($url) {
 <div class="cast-function-bar">加入收藏其他</div>
 </div>
 </div>
+</ul>
 <!-- xxxxxxxxxxxxxxxxx -->
 <?php
 	}
@@ -162,19 +164,15 @@ function ShowOneRSS($url) {
 <?php
 	show_top();
 ?>
-<script type="text/javascript">
-	$(function() {
-		$("#navigation").accordion();
-	});
-</script> 
-<div id="main" class="_full_page_">
+<div id="main">
 	<div class="fixed" id="goHome">
 		<span class="sprite">-</span>
 		<a class="" id="goToHomePage" href="#" title="首页">首页</a>
 	</div>
-        <div id="navigation">
+
+<div id="navigation" style="height: 580px;" >
 <?php
-	show_list2($rss);
+	show_list($rss);
 ?>
 	<div class="fixed" id="navigationBottom">
 	<div class="fr" id="channelActions">
@@ -182,10 +180,10 @@ function ShowOneRSS($url) {
 	</div>
 	</div>
 </div>
+
 <div id="contentWrapper">
 	<div class="half-toggle hover" style="height: 100%;" 
 		id="toggleNavigation" title="打开导航栏">
-	<span class="sprite">关闭导航栏</span>
 	</div>
 <?php
 	$feed_url=$_GET['feed_url'];
