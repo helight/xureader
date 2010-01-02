@@ -8,40 +8,67 @@
 	>
 
 <channel>
-	<title>XRSSReader</title>
-	<link>http://zhwen.org</link>
-	<description>XRSSReader</description>
+	<title>西邮RSS订阅器</title>
+	<link>http://xiyoulinux.cn</link>
+	<description>西邮RSS订阅器</description>
+	<item>		
+		<title>coop</title>
+		<link>http://cocobear.info/blog/feed/</link>
+		<description>coop</description>
+		<author></author>		
+		<category>06</category>
+	</item>
+	<item>
+
+		<title>关于洗茶</title>
+		<link>http://blog.sina.com.cn/rss/elina.xml</link>
+		<description>关于洗茶</description>
+		<author>关于洗茶</author>		
+		<category>06</category>
+	</item>
+	<item>
+
+		<title>上善若水</title>
+		<link>http://blog.sina.com.cn/rss/sally90.xml</link>
+		<description>上善若水</description>
+		<author>上善若水</author>		
+		<category>06</category>
+	</item>
+	<item>
+
+		<title>罗宾后代的藏宝地</title>
+		<link>http://rss.ycool.com/blog/sadiealupin.xml</link>
+		<description>罗宾后代的藏宝地</description>
+		<author>罗宾后代的藏宝地</author>		
+		<category>06</category>
+	</item>
 	<item>
 		<title>coop</title>
 		<link>http://cocobear.info/blog/feed/</link>
+		<description>coop</description>
+		<author></author>		
+		<category>06</category>
 	</item>
 	<item>
 		<title>关于洗茶</title>
 		<link>http://blog.sina.com.cn/rss/elina.xml</link>
+		<description>关于洗茶</description>
+		<author>关于洗茶</author>		
+		<category>06</category>
 	</item>
 	<item>
 		<title>上善若水</title>
 		<link>http://blog.sina.com.cn/rss/sally90.xml</link>
+		<description>上善若水</description>
+		<author>上善若水</author>		
+		<category>06</category>
 	</item>
 	<item>
 		<title>罗宾后代的藏宝地</title>
 		<link>http://rss.ycool.com/blog/sadiealupin.xml</link>
-	</item>
-	<item>
-		<title>coop</title>
-		<link>http://cocobear.info/blog/feed/</link>
-	</item>
-	<item>
-		<title>关于洗茶</title>
-		<link>http://blog.sina.com.cn/rss/elina.xml</link>
-	</item>
-	<item>
-		<title>上善若水</title>
-		<link>http://blog.sina.com.cn/rss/sally90.xml</link>
-	</item>
-	<item>
-		<title>罗宾后代的藏宝地</title>
-		<link>http://rss.ycool.com/blog/sadiealupin.xml</link>
+		<description>罗宾后代的藏宝地</description>
+		<author>罗宾后代的藏宝地</author>		
+		<category>06</category>
 	</item>
 </channel>
 </rss>
