@@ -1,12 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>西邮RSS阅读</title>
-	<link rel="stylesheet" type="text/css" href="css/reader.css">
-	<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
-	<script type="text/javascript" src="js/ui.core.js"></script>
-	<script type="text/javascript" src="js/ui.accordion.js"></script>
-</head>
 <?php
 	include "./functions.php";
 	$rss = new lastRSS;
@@ -140,7 +131,7 @@ function ShowOneRSS($url) {
 		<div class="cast-clip-container">
 			<span class="cast-clip-date">发表时间：Time</span>
 			<span title="title" class="cast-clip-author">没有文章</span>
-			<h2 title="我要的幸福生活">没有文章 </h2>
+			<h2 title="没有文章">没有文章 </h2>
 			<span class="cast-clip-content">描述2</span>
 		</div>
 	</div>
@@ -165,7 +156,10 @@ function ShowOneRSS($url) {
 <?php
 	}
 }
-
+?>
+<!-- end of function -->
+<!-- begin -->
+<?php
 	show_top();
 ?>
 <script type="text/javascript">
@@ -174,19 +168,14 @@ function ShowOneRSS($url) {
 	});
 </script> 
 <div id="main" class="_full_page_">
-	<div id="addSubscribeBtn" class="fixed">
-		<a href="#"><span class="sprite add-subscribe">+</span> 添加订阅</a>
-	</div>
 	<div class="fixed" id="goHome">
 		<span class="sprite">-</span>
 		<a class="" id="goToHomePage" href="#" title="首页">首页</a>
 	</div>
         <div id="navigation">
 <?php
-	show_list($rss);
+	show_list2($rss);
 ?>
-<div id="filter" class="scrolled" style="display: none; height: 560px;">                
-</div>
 	<div class="fixed" id="navigationBottom">
 	<div class="fr" id="channelActions">
 		<a id="feedMgrLink" class="foolinkL" href="#"><span class="foolinkR">订阅管理</span></a><a id="toggleViewUnreadLink" class="foolinkL" href="#"><span class="foolinkR" id="toggleViewUnreadBtn">隐藏已读</span></a>
@@ -194,7 +183,7 @@ function ShowOneRSS($url) {
 	</div>
 </div>
 <div id="contentWrapper">
-	<div class="half-toggle hover" style="height: 756px;" 
+	<div class="half-toggle hover" style="height: 100%;" 
 		id="toggleNavigation" title="打开导航栏">
 	<span class="sprite">关闭导航栏</span>
 	</div>
