@@ -12,6 +12,13 @@
 	<link>http://xiyoulinux.cn</link>
 	<description>西邮RSS订阅器</description>
 	<item>		
+		<title>七度黑光</title>
+		<link>http://zhwen.org/xlog/?feed=rss2</link>
+		<description>完美之道，不在无可增加，而在无可删减。</description>
+		<author>helight.xu</author>		
+		<category>06</category>
+	</item>
+	<item>		
 		<title>coop</title>
 		<link>http://cocobear.info/blog/feed/</link>
 		<description>coop</description>
