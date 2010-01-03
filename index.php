@@ -68,7 +68,7 @@ function ShowOneRSS($url) {
 <div class="cast-container">
 	<div class="cast-title">
 <?php
-	echo "<h2><a target='_blank' title='到原网页查看全文' href='".$item[link]."'>".$item[title]."<img src='img/icon-go.gif'></a></h2>";
+	echo "<h2><a target='_blank' title='到原网页查看全文' href='".$item[link]."'>".$item[title]."<img src='img/icon_go.gif'></a></h2>";
 	echo "<div class='stat'>";
 	echo "<span class='author'> 作者：helight</span>";
 	echo "<span class='date'> 发表时间：Time</span>";
@@ -141,7 +141,7 @@ function ShowOneRSS($url) {
 <div class="cast-wrapper">
 <div class="cast-container">
 	<div class="cast-title">
-		<h2><a target="_blank" title="到原网页查看全文" href="#">没有文章 <img src="img/icon-go.gif" alt=""></a></h2>
+		<h2><a target="_blank" title="到原网页查看全文" href="#">没有文章 <img src="img/icon_go.gif" alt=""></a></h2>
 		<div class="stat">
 		<span class="author"> 作者：helight</span>
 		<span class="date"> 发表时间：Time</span>
