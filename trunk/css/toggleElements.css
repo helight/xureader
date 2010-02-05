@@ -11,41 +11,44 @@
 	   	margin:1px 0 1px 0;
 		cursor:pointer;
 		text-decoration: none;
-		font-size: 20px;
+		font-size: 18px;
 		font-weight:bold;
 		line-height:20px;
 		display: block;
-		background:url(../img/sprite.gif) no-repeat left top; 
-		background-position:left -200px;
+		vertical-align:bottom;
 		cursor:pointer;
 	}
 	.toggler-closed {
 		color:#333;
-		padding-left:0px;
+		padding-left:15px;
 		height:30px;
-		background: #efefef url('togglerc.gif') center right no-repeat;
+		background: #edf4ff url('../img/togglerc.gif') center right no-repeat;
 		border: solid 1px white;
+		vertical-align:bottom;
 	}
 	.toggler-closed:hover {
 		color: #000;
-		padding-left:0px;
+		padding-left:15px;
 		height:30px;
-		background: #fff url('togglerch.gif') center right no-repeat;
+		background: #fff url('../img/togglerch.gif') center right no-repeat;
 		border: solid 1px #e3e3e3;
+		vertical-align:bottom;
 	}
 	.toggler-opened {
 		color:#333;
-		padding-left:0px;
+		padding-left:15px;
 		height:30px;
-		background: #efefef url('togglero.gif') center right no-repeat;
+		background: #edf4ff url('../img/togglero.gif') center right no-repeat;
 		border: solid 1px white;
+		vertical-align:bottom;
 	}
 	.toggler-opened:hover {
 		color: #000;
-		padding-left:0px;
+		padding-left:15px;
 		height:30px;
-		background: #fff url('toggleroh.gif') center right no-repeat;
+		background: #fff url('../img/toggleroh.gif') center right no-repeat;
 		border: solid 1px #e3e3e3;
+		vertical-align:bottom;
 	}
 
 	/* Container - default style */
@@ -60,7 +63,7 @@
 	.toggler-c-opened {
 	   margin:-0px 0px 0px 0px;
 	   padding:0px;
-	   background:#efefef;
+	   background:#f7fcff;
 	   border:solid 1px #fff;
 	}
 

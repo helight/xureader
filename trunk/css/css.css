@@ -13,7 +13,8 @@ border:#A3BFE7;/*边框颜色*/
 border-top-style:solid;/*设置边线条为虚线*/
 border-left-style:solid;/*设置边线条为虚线*/
 border-bottom-style:solid;/*设置边线条为虚线*/
-border-width:7px;/*设置边粗细为1像素*/  
+border-width:7px;/*设置边粗细为1像素*/
+overflow-y: auto;   
 float: left;
 }
 /*right box show content*/
@@ -36,14 +37,31 @@ padding:10px;
 }
 
 .toggler1{
-padding:0px;
+padding:5px;
 margin:0px;
 }
 .addrssto{
 font: bold 14px Arial;
 color:#1e50a2;
 }
-
+.bloginfo{
+background:#ccc;
+padding:5px;
+margin-bottom: 10px; 
+}
+.blogtitle{
+padding-left:30px;
+font: bold 18px Arial;
+color:black;
+vertical-align:bottom; 
+}
+.blogdesc{
+padding-left:20px;
+font: bold 14px Arial;
+color:#1e50a2;
+vertical-align:bottom;
+text-decoration: none; 
+}
 .arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
 font: bold 14px Arial;
 color: black;
