@@ -161,20 +161,19 @@ function ShowOneRSS($url) {
 	echo "<div class=\"contentWrapper\">";
 
 	if (($rs = $rss2->get($url)) && ($url != '')) {
-	echo "<div >";
-	echo "<span>";
-	echo "<a target='_blank' href='".$rs[link]."' id='titleSourceLink'>".$rs[title]."</a></span>";
-	echo "<span>".$rs[description]."</span>";
+	echo "<div class=\"bloginfo\">";
+	echo "<span class=\"blogtitle\"><a target='_blank' ";
+	echo "href='".$rs[link]."' id='titleSourceLink'>".$rs[title]."</a></span>";
+	echo "<span class=\"blogdesc\">".$rs[description]."</span>";
 	echo "</div>";
 
-	echo "<div><br>";	//<!-- begin show rss-->
-
+	echo "<div>";	//<!-- begin show rss-->
 	foreach ($rs['items'] as $item) {
 	//<!-- one item -->	
 	echo "<div class=\"toggler1\" title=".$item[title].">";
 	echo "<div class=\"rsscontent\">";
 	echo "<div class='rtitle'><a target='_blank' title='到原网页查看全文' ";
-	echo "href='".$item[link]."'>".$item[title]."<img src='img/icon_go.gif'></a>";
+	echo "href='".$item[link]."'>".$item[title]."<img src='img/icon_go.gif' border=0></a>";
 	echo "<span class='stat'> 作者：helight 发表时间：Time</span></div>";
 	echo "<div><br>";		
 		$out = strtr($item[description], array('<![CDATA['=>'', ']]>'=>''));
