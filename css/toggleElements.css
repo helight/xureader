@@ -1,0 +1,75 @@
+/**
+ * ----------------------------------------------------------------------------
+ * toggleElements.css - Stylesheet for jQuery-Plugin toggleElements
+ * ----------------------------------------------------------------------------
+ */
+
+/* Screen ------------------------------------------------------------------- */
+@media projection, screen {
+	/* Toggler - default style */
+	.toggler {
+	   	margin:1px 0 1px 0;
+		cursor:pointer;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight:bold;
+		line-height:20px;
+		display: block;
+		background:url(../img/sprite.gif) no-repeat left top; 
+		background-position:left -200px;
+		cursor:pointer;
+	}
+	.toggler-closed {
+		color:#333;
+		padding-left:0px;
+		height:30px;
+		background: #efefef url('togglerc.gif') center right no-repeat;
+		border: solid 1px white;
+	}
+	.toggler-closed:hover {
+		color: #000;
+		padding-left:0px;
+		height:30px;
+		background: #fff url('togglerch.gif') center right no-repeat;
+		border: solid 1px #e3e3e3;
+	}
+	.toggler-opened {
+		color:#333;
+		padding-left:0px;
+		height:30px;
+		background: #efefef url('togglero.gif') center right no-repeat;
+		border: solid 1px white;
+	}
+	.toggler-opened:hover {
+		color: #000;
+		padding-left:0px;
+		height:30px;
+		background: #fff url('toggleroh.gif') center right no-repeat;
+		border: solid 1px #e3e3e3;
+	}
+
+	/* Container - default style */
+	.toggler-c {
+	}
+	.toggler-c-closed {
+	   background:transparent;
+	   border:solid 1px #e3e3e3;
+	   margin:-0px 0px 0px 0px;
+	   padding:0px;
+	}
+	.toggler-c-opened {
+	   margin:-0px 0px 0px 0px;
+	   padding:0px;
+	   background:#efefef;
+	   border:solid 1px #fff;
+	}
+
+}
+
+/* Print -------------------------------------------------------------------- */
+@media print {
+
+	.toggler-c { margin-bottom:0px; }
+	.toggler { display: none; }
+
+}
