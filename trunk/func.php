@@ -80,7 +80,7 @@ note!!!
 function show_list()
 {
 	global $rss;
-	echo "<div class=\"arrowlistmenu\">";
+
 	if ($rs = $rss->get("./xy_members.xml")) {
 
 	$c4 = 0;
@@ -150,7 +150,6 @@ function show_list()
 		echo "<strong>".$category4title[$i]."</strong></a></li>";
 	}
 	echo "</ul>";
-	echo "</div>";//<!-- end of list show -->
 }
 ?>
 <!-- function ShowOneRSS($url) -->
@@ -158,16 +157,14 @@ function show_list()
 function ShowOneRSS($url) {
 	global $rss2;
 
-	echo "<div class=\"contentWrapper\">";
-
 	if (($rs = $rss2->get($url)) && ($url != '')) {
 	echo "<div class=\"bloginfo\">";
 	echo "<span class=\"blogtitle\"><a target='_blank' ";
 	echo "href='".$rs[link]."' id='titleSourceLink'>".$rs[title]."</a></span>";
 	echo "<span class=\"blogdesc\">".$rs[description]."</span>";
 	echo "</div>";
-
 	echo "<div>";	//<!-- begin show rss-->
+
 	foreach ($rs['items'] as $item) {
 	//<!-- one item -->	
 	echo "<div class=\"toggler1\" title=".$item[title].">";
@@ -185,7 +182,6 @@ function ShowOneRSS($url) {
 	}
 	echo "</div>";		//<!-- end show rss-->
 	}
-	echo "</div>";		//<!-- end of contentWrapper -->
 }
 ?>
 <!-- end of function -->
