@@ -1,5 +1,7 @@
 <?php
 	include "./func.php";
+	include "./mysql_op.php";
+//	include "./xml_op.php";
 	$feed_url=$_GET['feed_url'];
 ?>
 <!-- begin of RSS show -->
