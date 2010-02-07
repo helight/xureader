@@ -64,8 +64,8 @@ function show_list() {
 	$conn = mysql_connect("localhost","root","root")or die("connect err:".MySql_error());
 //	$conn = mysql_connect($hostip,$user,$passwd)or die("connect err:".MySql_error());
 	if($conn) {
-		mysql_select_db("rssreader");		//此处需要修改数据库名称
-		$sql = "select xy_member.member_blog,xy_member.member_rss_url,xy_category.category_name from xy_category,xy_member where xy_member.member_category_ID=xy_category.category_ID";
+		mysql_select_db("xiyoulinux");		//此处需要修改数据库名称
+		$sql = "select xy_member.member_blog,xy_member.member_rss_url,xy_category.category_name from xy_category,xy_member where xy_member.member_category_ID=xy_category.category_ID and xy_member.member_rss_url!=''";
 		//$sql = "select category,link,title from xyreader";
 		$result = mysql_query($sql, $conn);
 		while($row = mysql_fetch_array($result)) {
