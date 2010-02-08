@@ -1,81 +1,25 @@
 body {
-font-size: 18px;
+	font-size: 18px;
+	background:url(../images/sub_menu_03.gif) repeat-x;
 }
-
-.mainwindow{
-width: 99%;
-}
-
-.arrowlistmenu{
-width: 240px; /*width of accordion menu*/
-height: 580px;
-border:#A3BFE7;/*边框颜色*/ 
-border-top-style:solid;/*设置边线条为虚线*/
-border-left-style:solid;/*设置边线条为虚线*/
-border-bottom-style:solid;/*设置边线条为虚线*/
-border-width:7px;/*设置边粗细为1像素*/
-overflow-y: auto;   
-float: left;
-}
-/*right box show content*/
-.contentWrapper{
-width: 80%; /*width of accordion menu*/
-height: 580px;
-border:#A3BFE7;/*边框颜色*/ 
-border-style:solid;/*设置顶边线条为虚线*/
-border-width:7px;/*设置顶边粗细为1像素*/ 
-overflow-y: auto; 
-}
-.sprite{display:block;overflow:hidden;height:0;background:url(../img/sprite.gif) no-repeat left top;}
-.fav-star{width:16px;padding-top:16px;background:url(../img/sprite.gif) no-repeat left top; background-position:left -200px;cursor:pointer;}
 
 .rsscontent{
-border-color:#1e50a2;
-border-style:solid;/*设置顶边线条为虚线*/
-border-width:2px;/*设置顶边粗细为1像素*/
-padding:10px;
+	border-color:#1e50a2;
+	border-style:solid;/*设置顶边线条为虚线*/
+	border-width:2px;/*设置顶边粗细为1像素*/
+	padding:10px;
 }
 
 .toggler1{
-padding:5px;
-margin:0px;
+	padding:5px;
+	margin:0px;
+	text-align:left;
 }
 .addrssto{
-font: bold 14px Arial;
-color:#1e50a2;
-}
-.bloginfo{
-background:#ccc;
-padding:5px;
-margin-bottom: 10px; 
-}
-.blogtitle{
-padding-left:30px;
-font: bold 18px Arial;
-color:black;
-vertical-align:bottom; 
-}
-.blogdesc{
-padding-left:20px;
-font: bold 14px Arial;
-color:#1e50a2;
-vertical-align:bottom;
-text-decoration: none; 
-}
-.arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
-font: bold 14px Arial;
-color: black;
-background: #aaa url(titlebar.png) repeat-x center left;
-margin-bottom: 10px; /*bottom spacing between header and rest of content*/
-text-transform: uppercase;
-padding: 4px 0 4px 10px; /*header text is indented 10px*/
-cursor: hand;
-cursor: pointer;
+	font: bold 14px Arial;
+	color:#1e50a2;
 }
 
-.arrowlistmenu .openheader{ /*CSS class to apply to expandable header when it's expanded*/
-background-image: url(titlebar-active.png);
-}
 
 .toggler1 .rtitle{font-size:20px;}
 .toggler1 .rtitle a{/*position:relative;padding-right:23px;*/color:#000;}
